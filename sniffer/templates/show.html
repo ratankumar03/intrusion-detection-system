@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>show</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>source_ip</td>
+            <td>destination_ip</td>
+            <td>protocol</td>
+            <td>length</td>
+            <td>payload</td>
+        </tr>
+            {% for i in u %}
+            <tr>
+                <td>{{i.source_ip}}</td>
+                <td>{{i.destination_ip}}</td>
+                <td>{{i.protocol}}</td>
+                <td>{{i.length}}</td>
+                <td>{{i.payload}}</td>
+                <!-- <td><a href="del/{{i.id}}">Delete</a></td> -->
+            </tr>
+            <!-- <tr><td><a href="edit/{{i.id}}">Edit</a></td></tr> -->
+            {% endfor %}
+            
+        
+    </table>
+    
+</body>
+</html>

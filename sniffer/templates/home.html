@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intrusion Detection System</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #4a13af;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        a{
+            text-decoration-line:none ;
+        }
+
+        .container {
+            max-width: 700px;
+            width: 100%;
+            padding: 30px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .status {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .status h5 {
+            margin: 0;
+            font-size: 18px;
+            color: #fff;
+        }
+
+        .deposit {
+            background-color: #4caf50;
+        }
+
+        .withdraw {
+            background-color: #f44336;
+        }
+
+        .balance {
+            background-color: #f44336;
+        }
+
+        .submit-area {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .submit-area h4 {
+            margin-top: 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form action="home1">
+    <div class="container">
+        <h1>Network Traffic</h1>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="deposit status">
+                    
+                    
+                    <h5><a href="http://localhost:8000/u/">Capture Traffic</a></h5>
+                </div>
+            </div>
+
+            <!-- <div class="col-lg-4">
+                <div class="withdraw status">
+                    <h5>Predict Maliciousness</h5>
+                    <a href="https://colab.research.google.com/drive/1EcW0lhIXkJnGsakGYgVSysdZUUU-WzyC#scrollTo=Rie2xcMpd-X2">Predict Maliciousness</a>
+                </div>
+            </div> -->
+
+            <div class="col-lg-4">
+                <div class="balance status">
+                    <h5><a href="http://localhost:8000/u/show">Show Traffic</a></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+</html>
